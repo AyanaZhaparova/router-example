@@ -7,9 +7,10 @@ import Catalog from "./Catalog/Catalog";
 import Sale from "./Sale/Sale";
 import New from "./New/New";
 import Auth from "./Auth/Auth";
+import Posts from "./Posts/Posts";
 
-import { Route } from "react-router";
-import { Link } from 'react-router-dom';
+import { Route, Switch } from "react-router";
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -18,25 +19,61 @@ function App() {
     <div className="App">
       <nav>
      <ul>
-      <Link to="/new"><li>NEW</li></Link>
-      <Link to="/home"><li>Home</li></Link>
-      <Link to="/catalog"><li>Catalog</li></Link>
-      <Link to="/sale"><li>Sale</li></Link>
-      <Link to="/about"><li>About</li></Link>
-      <Link to="/contacts"><li>Contacts</li></Link>
-      <Link to="/auth"><li>Auth</li></Link>
+      <li>
+        <NavLink activeClassName="active" to="/" exact>
+         Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink activeClassName="active" to="/new">
+         NEW
+        </NavLink>
+      </li>
+      <li>
+        <NavLink activeClassName="active" to="/catalog">
+        Catalog
+        </NavLink>
+      </li>
+      <li>
+        <NavLink activeClassName="active" to="/sale">
+        Sale
+        </NavLink>
+      </li>
+      <li>
+        <NavLink activeClassName="active" to="/about">
+        About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink activeClassName="active" to="/contacts">
+        Contacts
+        </NavLink>
+      </li>
+      <li>
+        <NavLink activeClassName="active" to="/auth">
+        Auth
+        </NavLink>
+      </li>
+      <li>
+        <NavLink activeClassName="active" to="/posts">
+        Posts
+        </NavLink>
+      </li>
       </ul>
       </nav>
 
+     <Switch>
+      <Route path="/" component = {Home} exact/> 
       <Route path="/new" component = {New} />
-      <Route path="/home" component = {Home} />
       <Route path="/catalog" component = {Catalog} />
       <Route path="/sale" component = {Sale} />
       <Route path="/about" component = {About}/>
       <Route path="/contacts" component = {Contacts}/>
       <Route path="/auth" component = {Auth}/>
+      <Route path="/posts" component = {Posts}/>
+      <Route path="/" render={() => <h1>Page not found</h1>} />
       
-      
+      </Switch>
       
      
       
