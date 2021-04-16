@@ -2,5 +2,5 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(./../images/background1.jpg);
-    background-size: 90%;
+    background-size: cover;
 }
