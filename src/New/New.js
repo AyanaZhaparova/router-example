@@ -19,18 +19,18 @@ const New = () => {
     return (
         <div className={classes.New}>
             <h1>On this page you can take a look at our new products</h1>
-            <img alt={image} src={image1}/>
-            <img alt={image} src={image2}/>
-            <img alt={image} src={image3}/>
-            <img alt={image} src={image4}/>
-            <img alt={image} src={image5}/>
-            <img alt={image} src={image6}/>
-            <img alt={image} src={image7}/>
-            <img alt={image} src={image8}/>
-            <img alt={image} src={image9}/>
-            <img alt={image} src={image10}/>
-            <img alt={image} src={image11}/>
-            <img alt={image}     src={image12}/>
+            <img alt={jpg} src={image1}/>
+            <img alt={jpg} src={image2}/>
+            <img alt={jpg} src={image3}/>
+            <img alt={jpg} src={image4}/>
+            <img alt={jpg} src={image5}/>
+            <img alt={jpg} src={image6}/>
+            <img alt={jpg} src={image7}/>
+            <img alt={jpg} src={image8}/>
+            <img alt={jpg} src={image9}/>
+            <img alt={jpg} src={image10}/>
+            <img alt={jpg} src={image11}/>
+            <img alt={jpg}     src={image12}/>
 
             <Link to="/home" exact>Back</Link>
         </div>

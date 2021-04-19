@@ -14,9 +14,9 @@ const Home = () => {
         <Link className={classes.News} to="/new">NEW</Link>
 
             <div className={classes.header}>
-            <Link to="/suits"><h2>Suits</h2><img alt={image} src={image1}/></Link>
-            <Link to="/dresses">Dresses<img alt={image} src={image2}/></Link>
-            <Link to="/bestsellers">Our bestsellers<img alt={image} src={image3}/></Link>
+            <Link to="/suits"><h2>Suits</h2><img alt={jpg} src={image1}/></Link>
+            <Link to="/dresses">Dresses<img alt={jpg} src={image2}/></Link>
+            <Link to="/bestsellers">Our bestsellers<img alt={jpg} src={image3}/></Link>
             
             </div>
         </div>
