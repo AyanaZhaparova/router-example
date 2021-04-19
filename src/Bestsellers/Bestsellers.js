@@ -19,18 +19,18 @@ const Bestsellers = () => {
     return (
         <div className={classes.Bestsellers}>
             <h1>On this page you can take a look at our new products</h1>
-            <img src={image1}/>
-            <img src={image2}/>
-            <img src={image3}/>
-            <img src={image4}/>
-            <img src={image5}/>
-            <img src={image6}/>
-            <img src={image7}/>
-            <img src={image8}/>
-            <img src={image9}/>
-            <img src={image10}/>
-            <img src={image11}/>
-            <img src={image12}/>
+            <img alt={image} src={image1}/>
+            <img alt={image} src={image2}/>
+            <img alt={image} src={image3}/>
+            <img alt={image} src={image4}/>
+            <img alt={image} src={image5}/>
+            <img alt={image} src={image6}/>
+            <img alt={image} src={image7}/>
+            <img alt={image} src={image8}/>
+            <img alt={image} src={image9}/>
+            <img alt={image} src={image10}/>
+            <img alt={image} src={image11}/>
+            <img alt={image} src={image12}/>
 
             <Link to="/home" exact>Back</Link>
         </div>
