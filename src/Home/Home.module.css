@@ -17,7 +17,11 @@ body {
     margin-left: 60px;
 }
 
-
+.header h2 {
+    text-decoration: none;
+    color: black;
+    z-index: 3;
+}
 
 
 .News {
